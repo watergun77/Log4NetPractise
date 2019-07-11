@@ -11,7 +11,7 @@
             <RowDefinition Height="10*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBox Text="{Binding MyTextBoxLog, UpdateSourceTrigger=PropertyChanged}" local:TextBoxBehaviour.ScrollOnTextChanged="True" VerticalScrollBarVisibility="Auto" ></TextBox>
+        <TextBox Text="{Binding MyTextBoxLog, UpdateSourceTrigger=PropertyChanged}" local:TextBoxBehaviour.ScrollOnTextChanged="True" VerticalScrollBarVisibility="Auto" IsReadOnly="True"></TextBox>
         <Button Command="{Binding MyClickCmd}" Grid.Row="1">Simulate Loggings</Button>
     </Grid>
 </Window>
